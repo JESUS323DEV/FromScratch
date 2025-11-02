@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--!Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <!--!Icon Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!--!Css Personalizado-->
+    <link rel="stylesheet" href="css/style_main.css">
+    <link rel="stylesheet" href="css/animaciones.css">
+    <title>Luz & Sombra</title>
+</head>
+
+<body>
+
+    <header class="">
+        <nav class="menuFijo ">
+            <div class="menuCont">
+                <h4><a href="#"></a>Luz & Sombra</h4>
+
+                <button class="toggleBtn ocultar" id="btnToggle"><i class="bi bi-list"></i></button>
+
+                <ul id="menuNav" class="activo listMenu">
+                    <li>
+                        <div class="closeToggle">
+                            <h4><a href="#"></a>Luz & Sombra</h4>
+                            <button id="btnClose" class="closeToggle"><i class="bi bi-x-lg"></i></button>
+                        </div>
+                    </li>
+
+                    <li><a href="#hero" class="linkNav" data-section="hero">Inicio</a></li>
+                    <li><a href="#about" class="linkNav" data-section="about">Sobre Nosotros</a></li>
+                    <li><a href="#galeria" class="linkNav " data-section="galeria">Galería</a></li>
+                    <li><a href="#contacto" class="linkNav" data-section="contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--!Aquí Empieza el Main-->
+    <main>
+
+        <!--!Sección Inicial-->
+        <section id="sectionInicial" class="">
+            <div class="bgInicio">
+                <div class="contLoader">
+                    <h1>“Donde la claridad y el misterio se encuentran.”</h1>
+                    <div class="loader"></div>
+                    <p>cargando...</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!--!Sección Hero-->
+        <section id="hero" class="ocultar">
+            <div class="contHero">
+                <div class="contenidoHero">
+                    <h1>La luz crea la fotografía, y solo a través de las sombras se
+                        conoce la luz </h1>
+
+                    <img src="media/img/imgHero.jpg" alt="Imagen Hero">
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <!--!Sección Sobre nosotros-->
+        <section id="about" class="ocultar">
+            <div class="contAbout">
+
+                <h3>¿Quiénes Somos?</h3>
+                <p>Somos Luz & Sombra, un estudio de fotografía artística minimalista.
+                    No retratamos lo evidente: exploramos el contraste entre lo que se muestra y lo que se intuye.
+                    Trabajamos con luces duras, fondos oscuros y emociones reales para capturar la esencia de cada
+                    momento.</p>
+
+                <p> Nuestro propósito no es solo crear imágenes, sino provocar una sensación:
+                    que el espectador vea, y al mismo tiempo, sienta.</p>
+            </div>
+
+            <div class="styleH3">
+                <h3>¿Por qué nosotros?</h3>
+            </div>
+            <div class="contAbout2">
+
+                <div class="experiencia">
+                    <i class="bi bi-substack"></i>
+                    <h5>Experiencia</h5>
+                    <p>Asesoramiento y orientación adaptada a las necesidades de cada client.</p>
+                </div>
+
+                <div class="calidad">
+                    <i class="bi bi-camera2"></i>
+                    <h5>Calidad</h5>
+                    <p>En constante formación técnica, renovación de equipos e infraestructura.</p>
+                </div>
+
+                <div class="precio">
+                    <i><i class="bi bi-wallet2"></i></i>
+                    <h5>Precio</h5>
+                    <p>Mantenemos la mejor calidad-precio en todos los trabajos y proyectos.</p>
+                </div>
+
+                <div class="retoque">
+                    <i><i class="bi bi-person-video3"></i></i>
+                    <h5>Retoque</h5>
+                    <p>Todos los trabajos se retocan con software Photoshop según requerimientos.</p>
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <!--!Sección Galería-->
+
+        <section id="galeria" class="ocultar">
+
+            <div class="contGaleria">
+                <h3>Luz & Sombra en foco</h3>
+                <img src="media/img/galeria1.jpg" alt="Imagen 1">
+                <img src="media/img/galeria2.jpg" alt="Imagen 2">
+                <img src="media/img/galeria3.jpg" alt="Imagen 3">
+                <img src="media/img/galeria4.jpg" alt="Imagen 4">
+            </div>
+
+        </section>
+
+        <!--!Sección Contacto-->
+        <section id="contacto" class="ocultar">
+            <form >
+                <div class="contForm">
+                    <h3>Contacto</h3>
+
+                    <p>Escríbenos</p>
+                    <label for="nombre"></label>
+                    <input type="text" name="Nombre" id="nombre" placeholder="Nombre Completo">
+
+                    <label for="telefono"></label>
+                    <input type="tel" name="Tel" id="telefono" placeholder="Teléfono">
+
+                    <label for="correo"></label>
+                    <input type="email" name="Correo" id="correo" placeholder="Correo Electrónico">
+
+                    <label for="textArea"></label>
+                    <textarea name="Mensaje" id="textArea" placeholder="Escríbenos tu mensaje"></textarea>
+
+                    <button type="button">Hablemos</button>
+
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="headFooter">
+            <div class="iconFooter">
+                <a href="#"><i class="bi bi-instagram iconInsta"></i></a>
+                <p>© 2025 Luz & Sombra</p>
+            </div>
+        </div>
+
+
+        <div class="contFooter">
+            <div class="textFooter">
+                <div class="bodyFooter">
+                    <p>Dirección: Calle Falsa 123, Madrid </p>
+                    <p>Tel: <a href="tel:+34123456789">123456789</a></p>
+                    <p>Email: <a href="mailto:info@Luz&Sombra.com">info@Luz&Sombra.com</a></p>
+                    <p>2025 © Copyright - Luz&Sombra</p>
+                </div>
+            </div>
+
+            <div class="navFooter">
+                <nav>
+                    <ul>
+                        <li><a href="">Sobre Nosotros</a></li>
+                        <li><a href="">Galería</a></li>
+                        <li><a href="">Contacto</a></li>
+                        <li><a href="">Aviso Legal</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

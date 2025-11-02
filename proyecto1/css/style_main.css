@@ -1,0 +1,1405 @@
+:root {
+    --color-fondo: #0E0E0E;
+    --color-acento: #F5D76E;
+    --color-texto: #F8F8F8;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: "Zalando Sans Expanded", sans-serif;
+
+}
+
+main {
+    padding-top: 6rem;
+
+}
+
+section {
+    scroll-margin-top: 2rem;
+
+}
+
+/*! ================ MENU NAV ==================== */
+.menuCont {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-fondo);
+    color: #F8F8F8;
+
+}
+
+.menuFijo {
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+
+
+
+.menuCont h4 {
+
+    font-size: 1.7rem;
+    font-weight: bold;
+    border-bottom: 1px solid var(--color-acento);
+}
+
+.activo {
+
+    display: none;
+}
+
+.listMenu {
+    position: fixed;
+    inset: 0;
+    list-style: none;
+    background-color: var(--color-fondo);
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+    /* por si se queda detrás del nav */
+}
+
+
+
+.listMenu li {
+
+    border-bottom: 1px solid var(--color-acento);
+    padding: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.listMenu li a {
+
+    text-decoration: none;
+    color: white;
+}
+
+
+.menuCont button {
+
+    background-color: var(--color-fondo);
+    border: 1px solid var(--color-texto);
+    border-radius: 0.3rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.closeToggle {
+
+    padding: 0.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.closeToggle button {
+
+    padding: 0.5rem;
+}
+
+.menuCont i {
+
+    color: #F8F8F8;
+}
+
+
+/*! ==========Footer==============*/
+.contFooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+}
+
+
+
+.contFooter a {
+
+    text-decoration: none;
+    color: white;
+}
+
+.contFooter small {
+
+    margin: 1rem;
+}
+
+.iconFooter {
+
+    text-align: center;
+}
+
+.iconFooter p {
+    font-size: 0.9rem;
+
+
+}
+
+
+.iconInsta {
+
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
+
+
+
+
+.headFooter {
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-acento);
+    border-top: 1px solid var(--color-acento);
+}
+
+.headFooter p {
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0.5rem;
+
+}
+
+
+
+
+.bodyFooter p {
+    margin: 0;
+    padding: 0.4rem;
+    font-size: 0.8rem;
+}
+
+
+
+.navFooter ul {
+
+    list-style: none;
+    text-align: end;
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+}
+
+.navFooter li {
+
+    padding: 0.4rem;
+    font-size: 0.8rem
+}
+
+
+/*! ==========Sección inicial==============*/
+.ocultar {
+
+    display: none !important;
+}
+
+.mostrar {
+
+    display: block;
+}
+
+.noScroll {
+
+    overflow: hidden;
+}
+
+.bgInicio {
+    position: relative;
+
+    background-image: url(../media/img/fondohero5.jpg);
+    background-position: center;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+
+
+}
+
+.bgInicio::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffe7;
+    z-index: -1;
+
+}
+
+
+.bgInicio h1 {
+    color: var(--color-fondo);
+    font-size: 2.2rem;
+    text-align: start;
+    padding: 2rem;
+    margin: 0;
+}
+
+.bgInicio p {
+
+    color: #0E0E0E;
+    font-weight: bold;
+}
+
+
+
+.contLoader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+/*! ==========Secciones que empiezan ocultas==============*/
+
+/*! ==========Sección Hero==============*/
+.contenidoHero {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contenidoHero h1 {
+
+    line-height: 1.5;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.contenidoHero img {
+
+    width: 90%;
+    height: auto;
+    margin: auto;
+
+}
+
+/*! ==========Sección Sobre Nosotros==============*/
+
+.contAbout {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contAbout h3,
+.contForm h3,
+.styleH3 h3,
+.contGaleria h3 {
+
+    font-size: 1.7rem;
+    border-bottom: 1px solid #f5d86e50;
+    padding-left: 1rem;
+    margin-top: 5rem;
+    text-align: start;
+
+}
+
+
+.contAbout p {
+    padding: 1rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/*! ==========Sección POR QUÉ NOSOTROS? ==============*/
+.contAbout2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.experiencia,
+.calidad {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.experiencia h5,
+.calidad h5,
+.precio h5,
+.retoque h5 {
+
+    margin: 0;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.experiencia p,
+.calidad p,
+.precio p,
+.retoque p {
+
+    font-size: 0.8rem;
+    line-height: 1.5;
+    padding: 1rem;
+    margin: 0;
+
+}
+
+.experiencia i,
+.calidad i,
+.precio i,
+.retoque i {
+
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.styleH3 {
+    padding: 0;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.styleH3 H3 {
+
+    font-size: 1.5rem;
+
+}
+
+
+
+
+
+/*! ==========Sección Galería==============*/
+
+.contGaleria {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contGaleria img {
+
+    margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+.contGaleria h3 {
+
+    text-align: center;
+}
+
+
+
+/*! ==========Contacto==============*/
+
+.contForm {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contForm p {
+
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.contForm h3 {
+
+    text-align: center;
+}
+
+.contForm input,
+textarea {
+
+    height: 1.7rem;
+    padding: 0.5rem;
+    width: 75%;
+    border: 1px solid gray;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.contForm input:focus {
+    outline: none;
+    border: 1px solid gray;
+
+}
+
+.contForm button {
+
+    width: 30%;
+    height: 3rem;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: auto;
+}
+
+.contForm textarea {
+
+    height: 3rem;
+}
+
+
+
+
+
+
+
+
+/* =====================
+   MEDIA QUERIES RESPONSIVE
+   ===================== */
+
+/* Móviles XS (≤575px) */
+@media (max-width: 575px) {
+    body::before {
+        content: "XS";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: rgb(185, 6, 6);
+        color: rgb(0, 0, 0);
+        padding: 5px;
+        z-index: 9999;
+
+    }
+
+}
+
+/* Móviles verticales SM (576px – 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    body::before {
+        content: "SM";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: rgb(0, 255, 30);
+        color: rgb(0, 0, 0);
+        padding: 5px;
+        z-index: 9999;
+    }
+
+    section {
+
+        scroll-margin-top: 3rem;
+    }
+
+    .menuCont {
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+        background-color: var(--color-fondo);
+        color: #F8F8F8;
+    }
+
+    .closeToggle {
+
+        padding: 0.5rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+
+    }
+
+
+    main {
+        padding-top: 7rem !important;
+    }
+
+    .contenidoHero h1 {
+
+        line-height: 1.5;
+        font-size: 3rem;
+        padding-left: 1.6rem;
+    }
+
+    /*! ==========Sección SOBRE NOSOTROS? ==============*/
+    .contAbout {
+        padding-left: 1.6rem;
+
+    }
+
+    .contAbout h3,
+    .contForm h3,
+    .styleH3 h3,
+    .contGaleria h3 {
+
+        font-size: 2rem;
+        border-bottom: 1px solid #f5d86e50;
+        text-align: start;
+
+    }
+
+    .contAbout p {
+        padding-left: 1rem;
+        font-size: 1.3rem;
+        margin: 0;
+        line-height: 1.7;
+    }
+
+
+
+    /*! ==========Sección POR QUÉ NOSOTROS? ==============*/
+
+
+    .contAbout2 {
+
+        padding-left: 1.6rem;
+        margin-top: 5rem;
+
+    }
+
+    .experiencia h5,
+    .calidad h5,
+    .precio h5,
+    .retoque h5 {
+
+        margin: 0;
+        padding: 0.3rem;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    .experiencia p,
+    .calidad p,
+    .precio p,
+    .retoque p {
+
+        font-size: 1rem;
+        line-height: 1.5;
+        padding: 1rem;
+        margin: 0;
+
+    }
+
+    .experiencia i,
+    .calidad i,
+    .precio i,
+    .retoque i {
+
+        color: rgb(255, 255, 255);
+        font-size: 3rem;
+        padding: 0.5rem;
+    }
+
+    .styleH3 {
+
+        font-size: 3rem;
+        padding-left: 1.6rem;
+        margin: 0;
+        margin-top: 5rem;
+        text-align: start;
+    }
+
+    .styleH3 h3 {
+
+        font-size: 2rem;
+    }
+
+
+
+    .contGaleria h3 {
+
+        text-align: center;
+    }
+
+
+
+
+
+
+}
+
+/* Tablets verticales MD (768px – 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    body::before {
+        content: "MD";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: rgb(1, 22, 255);
+        color: rgb(0, 0, 0);
+        padding: 5px;
+        z-index: 9999;
+    }
+
+
+    .menuCont {
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+        background-color: var(--color-fondo);
+        color: #F8F8F8;
+    }
+
+    .closeToggle {
+
+        padding: 0.5rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+
+    }
+
+    .contFooter {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+
+        max-width: 80%;
+        margin: auto;
+
+    }
+
+
+
+    main {
+        padding-top: 7rem !important;
+    }
+
+    .contenidoHero h1 {
+
+        line-height: 1.5;
+        font-size: 3rem;
+        padding-left: 2.4rem;
+    }
+
+    /*! ==========Sección SOBRE NOSOTROS? ==============*/
+    .contAbout {
+
+        padding-left: 2.4rem;
+
+    }
+
+    .contAbout h3,
+    .contForm h3,
+    .styleH3 h3 {
+
+        font-size: 2rem;
+        border-bottom: 1px solid #f5d86e50;
+        padding: 1rem;
+        margin-top: 5rem;
+        text-align: start;
+
+    }
+
+    .contAbout p {
+        padding-left: 1rem;
+        font-size: 1.3rem;
+        margin: 0;
+        line-height: 1.7;
+    }
+
+
+
+    /*! ==========Sección POR QUÉ NOSOTROS? ==============*/
+
+
+
+
+    .experiencia h5,
+    .calidad h5,
+    .precio h5,
+    .retoque h5 {
+
+        margin: 0;
+        padding: 0.3rem;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    .experiencia p,
+    .calidad p,
+    .precio p,
+    .retoque p {
+
+        font-size: 1rem;
+        line-height: 1.5;
+        padding: 1rem;
+        margin: 0;
+
+    }
+
+    .experiencia i,
+    .calidad i,
+    .precio i,
+    .retoque i {
+
+        color: rgb(255, 255, 255);
+        font-size: 3rem;
+        padding: 0.5rem;
+    }
+
+    .styleH3 {
+
+        font-size: 2rem;
+        padding-left: 2.4rem;
+
+
+
+
+
+    }
+
+
+    .contGaleria h3 {
+
+        font-size: 2rem;
+        border-bottom: 1px solid #f5d86e50;
+        padding: 1rem;
+        margin-top: 5rem;
+        text-align: start;
+
+    }
+
+}
+
+
+/* Tablets horizontales / laptops pequeñas LG (992px – 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    body::before {
+        content: "LG";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: rgb(196, 1, 255);
+        color: rgb(0, 0, 0);
+        padding: 5px;
+        z-index: 9999;
+
+    }
+
+    body {
+        width: 90%;
+        margin: auto;
+    }
+
+    main {
+
+        padding-top: 0;
+    }
+
+    /*! ================ MENU NAV ==================== */
+    .menuCont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-fondo);
+        color: #F8F8F8;
+        border-bottom: 1px solid #f5d86e89;
+
+
+    }
+
+    .menuCont .listMenu {
+        /* o relative, según tu estructura */
+        position: static;
+        /* anula el inset: 0 */
+        inset: auto;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        font-size: 0.9rem;
+
+    }
+
+    .menuFijo {
+
+        position: static;
+
+
+    }
+
+
+
+
+    .toggleBtn,
+    .closeToggle {
+
+        display: none !important;
+    }
+
+
+    .listMenu li {
+
+        border-bottom: none;
+        margin-bottom: 0;
+        margin-top: 1.6rem;
+
+    }
+
+    .menuCont h4 {
+
+        font-size: 1.7rem;
+        margin: 0;
+        padding: 1rem;
+
+        font-weight: bold;
+        border-bottom: 1px solid var(--color-acento);
+    }
+
+    /*! ==========Sección Hero==============*/
+
+    .contenidoHero h1 {
+
+        width: 60%;
+        padding-left: 3rem;
+        font-size: 2.5rem;
+
+    }
+
+    /*! ==========Sección Sobre Nosotros==============*/
+
+    .contAbout {
+
+        display: flex;
+        flex-direction: column;
+        padding-left: 3rem;
+
+    }
+
+    .contAbout h3,
+    .contForm h3,
+    .styleH3 h3 {
+
+        font-size: 1.7rem;
+        padding: 0.3rem;
+
+    }
+
+    /*! ==========Sección POR QUÉ NOSOTROS? ==============*/
+
+    .styleH3 {
+
+        font-size: 1.7rem;
+        text-align: start;
+        padding-left: 3rem;
+        border: none;
+
+
+    }
+
+
+
+    .contAbout2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        padding-left: 3rem;
+    }
+
+
+    .contGaleria h3 {
+
+        font-size: 1.7rem;
+        padding: 0.3rem;
+
+        text-align: start;
+
+    }
+
+
+}
+
+
+
+
+
+
+/*NEST HUB NORMAL YS I (1200px – 1279px) */
+@media (min-width: 1200px) and (max-width: 1279px) {
+    body::before {
+        content: "1200px-1279px";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 20px;
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        padding: 5px;
+        z-index: 9999;
+    }
+
+    body {
+        width: 90%;
+        margin: auto;
+    }
+
+    main {
+
+        padding-top: 0;
+    }
+
+    /*! ================ MENU NAV ==================== */
+    .menuCont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-fondo);
+        color: #F8F8F8;
+        border-bottom: 1px solid #f5d86e89;
+
+
+    }
+
+    .menuCont .listMenu {
+        /* o relative, según tu estructura */
+        position: static;
+        /* anula el inset: 0 */
+        inset: auto;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        font-size: 0.9rem;
+
+    }
+
+    .menuFijo {
+
+        position: static;
+
+
+    }
+
+
+
+
+    .toggleBtn,
+    .closeToggle {
+
+        display: none !important;
+    }
+
+
+    .listMenu li {
+
+        border-bottom: none;
+        margin-bottom: 0;
+        margin-top: 1.6rem;
+
+    }
+
+    .menuCont h4 {
+
+        font-size: 1.7rem;
+        margin: 0;
+        padding: 1rem;
+
+        font-weight: bold;
+        border-bottom: 1px solid var(--color-acento);
+    }
+
+    /*! ==========Sección Hero==============*/
+
+    .contenidoHero h1 {
+
+        width: 60%;
+        padding-left: 3rem;
+        font-size: 2.5rem;
+
+    }
+
+    /*! ==========Sección Sobre Nosotros==============*/
+
+    .contAbout {
+
+        display: flex;
+        flex-direction: column;
+        padding-left: 3rem;
+
+    }
+
+    .contAbout h3,
+    .contForm h3,
+    .styleH3 h3 {
+
+        font-size: 1.7rem;
+        padding: 0.3rem;
+
+    }
+
+    /*! ==========Sección POR QUÉ NOSOTROS? ==============*/
+
+    .styleH3 {
+
+        font-size: 1.7rem;
+        text-align: start;
+        padding-left: 3rem;
+        border: none;
+
+
+    }
+
+
+
+    .contAbout2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        padding-left: 3rem;
+    }
+
+
+    .contGaleria h3 {
+
+        font-size: 1.7rem;
+        padding: 0.3rem;
+
+        text-align: start;
+
+    }
+
+}
+
+
+/* NEST HUB MAX Y SIMILARES (1280px – 1399px) */
+@media (min-width: 1280px) and (max-width: 1399px) {
+
+    body::before {
+        content: "1200px-1279px";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 20px;
+        background: rgb(255, 102, 0);
+        color: rgb(255, 255, 255);
+        padding: 5px;
+        z-index: 9999;
+    }
+
+    body {
+        width: 90%;
+        margin: auto;
+    }
+
+    main {
+
+        padding-top: 0;
+    }
+
+    /*! ================ MENU NAV ==================== */
+    .menuCont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-fondo);
+        color: #F8F8F8;
+        border-bottom: 1px solid #f5d86e89;
+
+
+    }
+
+    .menuCont .listMenu {
+        /* o relative, según tu estructura */
+        position: static;
+        /* anula el inset: 0 */
+        inset: auto;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        font-size: 0.9rem;
+
+    }
+
+    .menuFijo {
+
+        position: static;
+
+
+    }
+
+
+
+
+    .toggleBtn,
+    .closeToggle {
+
+        display: none !important;
+    }
+
+
+    .listMenu li {
+
+        border-bottom: none;
+        margin-bottom: 0;
+        margin-top: 1.6rem;
+
+    }
+
+    .menuCont h4 {
+
+        font-size: 1.7rem;
+        margin: 0;
+        padding: 1rem;
+
+        font-weight: bold;
+        border-bottom: 1px solid var(--color-acento);
+    }
+
+    /*! ==========Sección Hero==============*/
+
+    .contenidoHero h1 {
+
+        width: 60%;
+        padding-left: 3.7rem;
+        font-size: 3.2rem;
+
+    }
+
+    /*! ==========Sección Sobre Nosotros==============*/
+
+    .contAbout {
+
+        display: flex;
+        flex-direction: column;
+        padding-left: 3rem;
+
+    }
+
+    .contAbout h3,
+    .contForm h3,
+    .styleH3 h3 {
+
+        font-size: 1.7rem;
+        padding: 0.3rem;
+
+    }
+
+    /*! ==========Sección POR QUÉ NOSOTROS? ==============*/
+
+    .styleH3 {
+
+        font-size: 1.7rem;
+        text-align: start;
+        padding-left: 3rem;
+        border: none;
+
+
+    }
+
+
+
+    .contAbout2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        padding-left: 3rem;
+    }
+
+
+    .contGaleria h3 {
+
+        font-size: 1.7rem;
+        padding: 0.3rem;
+
+        text-align: start;
+
+    }
+}
+
+/* Pantallas grandes XXL ≥1400px */
+@media (min-width: 1400px) {
+    body::before {
+        content: "1200px-1279px";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 20px;
+        background: rgb(135, 181, 255);
+        color: rgb(255, 255, 255);
+        padding: 5px;
+        z-index: 9999;
+    }
+
+    body {
+        width: 60%;
+        margin: auto;
+    }
+
+
+
+    main {
+
+        padding-top: 0;
+    }
+
+    /*! ================ MENU NAV ==================== */
+    .menuCont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-fondo);
+        color: #F8F8F8;
+        border-bottom: 1px solid #f5d86e89;
+
+
+    }
+
+    .menuCont .listMenu {
+        /* o relative, según tu estructura */
+        position: static;
+        /* anula el inset: 0 */
+        inset: auto;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        font-size: 0.9rem;
+
+    }
+
+    .menuFijo {
+
+        position: static;
+
+
+    }
+
+
+
+
+    .toggleBtn,
+    .closeToggle {
+
+        display: none !important;
+    }
+
+
+    .listMenu li {
+
+        border-bottom: none;
+        margin-bottom: 0;
+        margin-top: 1.6rem;
+
+    }
+
+    .menuCont h4 {
+
+        font-size: 1.7rem;
+        margin: 0;
+        padding: 1rem;
+
+        font-weight: bold;
+        border-bottom: 1px solid var(--color-acento);
+    }
+
+    /*! ==========Sección Hero==============*/
+
+    .contenidoHero h1 {
+
+        width: 60%;
+        padding-left: 5.2rem;
+        font-size: 3.2rem;
+    }
+
+    .contenidoHero img {
+
+        width: 85%;
+    }
+
+
+    /*! ==========Sección Sobre Nosotros==============*/
+
+    .contAbout {
+
+        display: flex;
+        flex-direction: column;
+        padding-left: 5.2rem;
+
+
+    }
+
+    .contAbout h3,
+    .contForm h3,
+    .styleH3 h3 {
+
+        font-size: 1.7rem;
+        padding: 0.3rem;
+
+    }
+
+    /*! ==========Sección POR QUÉ NOSOTROS? ==============*/
+
+    .styleH3 {
+
+        font-size: 1.7rem;
+        text-align: start;
+        padding-left: 5.2rem;
+
+        border: none;
+
+
+    }
+
+
+
+    .contAbout2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        padding-left: 3rem;
+    }
+
+
+    .contGaleria h3 {
+
+        font-size: 1.7rem;
+        padding: 0.3rem;
+
+        text-align: start;
+
+    }
+}
