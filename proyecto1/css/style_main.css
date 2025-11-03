@@ -458,6 +458,7 @@ textarea {
     background-color: rgb(0, 0, 0);
     color: white;
     margin: auto;
+    margin-top: 2rem;
 }
 
 .contForm textarea {
@@ -813,6 +814,13 @@ textarea {
         color: rgb(0, 0, 0);
         padding: 5px;
         z-index: 9999;
+    }
+
+
+    .linkActive {
+        background-color: #F5D76E;
+        padding: 0.5rem;
+        color: #0E0E0E !important;
 
     }
 
@@ -825,6 +833,12 @@ textarea {
 
         padding-top: 0;
     }
+
+    section {
+        scroll-margin-top: 9rem !important;
+
+    }
+
 
     /*! ================ MENU NAV ==================== */
     .menuCont {
@@ -890,11 +904,15 @@ textarea {
 
     .contenidoHero h1 {
 
-        width: 60%;
-        padding-left: 3rem;
-        font-size: 2.5rem;
-
+        width: 70%;
+        font-size: 3rem;
     }
+
+    .contHero img {
+
+        width: 100%;
+    }
+
 
     /*! ==========Sección Sobre Nosotros==============*/
 
@@ -979,6 +997,11 @@ textarea {
         padding-top: 0;
     }
 
+    section {
+        scroll-margin-top: 9rem !important;
+
+    }
+
     /*! ================ MENU NAV ==================== */
     .menuCont {
         display: flex;
@@ -989,6 +1012,13 @@ textarea {
         color: #F8F8F8;
         border-bottom: 1px solid #f5d86e89;
 
+
+    }
+
+    .linkActive {
+        background-color: #F5D76E;
+        padding: 0.5rem;
+        color: #0E0E0E !important;
 
     }
 
@@ -1099,6 +1129,28 @@ textarea {
 
     }
 
+    /*! ==========Sección Footer ==============*/
+    footer {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+
+    }
+
+
+
+
+    .contFooter {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 1rem;
+    }
+
+
 }
 
 
@@ -1128,6 +1180,11 @@ textarea {
         padding-top: 0;
     }
 
+    section {
+        scroll-margin-top: 9rem !important;
+
+    }
+
     /*! ================ MENU NAV ==================== */
     .menuCont {
         display: flex;
@@ -1138,6 +1195,14 @@ textarea {
         color: #F8F8F8;
         border-bottom: 1px solid #f5d86e89;
 
+
+    }
+
+
+    .linkActive {
+        background-color: #F5D76E;
+        padding: 0.5rem;
+        color: #0E0E0E !important;
 
     }
 
@@ -1245,8 +1310,30 @@ textarea {
         padding: 0.3rem;
 
         text-align: start;
+    }
+
+    /*! ==========Sección Footer ==============*/
+    footer {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
 
     }
+
+
+
+
+    .contFooter {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 1rem;
+    }
+
+
 }
 
 /* Pantallas grandes XXL ≥1400px */
@@ -1274,6 +1361,11 @@ textarea {
     main {
 
         padding-top: 0;
+    }
+
+    section {
+        scroll-margin-top: 9rem !important;
+
     }
 
     /*! ================ MENU NAV ==================== */
@@ -1336,6 +1428,15 @@ textarea {
         border-bottom: 1px solid var(--color-acento);
     }
 
+
+
+    .linkActive {
+        background-color: #F5D76E;
+        padding: 0.5rem;
+        color: #0E0E0E !important;
+
+    }
+
     /*! ==========Sección Hero==============*/
 
     .contenidoHero h1 {
@@ -1369,6 +1470,7 @@ textarea {
         font-size: 1.7rem;
         padding: 0.3rem;
 
+
     }
 
     /*! ==========Sección POR QUÉ NOSOTROS? ==============*/
@@ -1384,6 +1486,10 @@ textarea {
 
     }
 
+    body {
+
+        overflow-x: hidden;
+    }
 
 
     .contAbout2 {
@@ -1393,6 +1499,7 @@ textarea {
         padding-left: 3rem;
     }
 
+    /*! ==========Sección Galería ==============*/
 
     .contGaleria h3 {
 
@@ -1402,4 +1509,57 @@ textarea {
         text-align: start;
 
     }
+
+
+    /*! ==========Sección Contacto ==============*/
+    .contForm input,
+    textarea {
+
+        height: 1.7rem;
+        padding: 0.5rem;
+        width: 30%;
+        border: 1px solid gray;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+
+
+
+    .contForm h3 {
+
+        width: 50%;
+        margin: auto;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    /*! ==========Sección Footer ==============*/
+    footer {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+
+    }
+
+
+
+
+    .contFooter {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 1rem;
+    }
+
+
+
+
+
+
+
+
 }
